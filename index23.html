@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        function calculateTotal(obj) {
+    return Object.values(obj).reduce((ad, curr) => ad + curr, 0);
+}
+
+let obj = {
+    price1: 100,
+    price2: 150,
+    price3: 200,
+    price4: 100,
+    price5: 150
+};
+
+let totalSum = calculateTotal(obj);
+console.log(totalSum);
+
+
+
+//2
+function objectsToArray(array) {
+    return array.map(obj => Object.values(obj));
+}
+
+let array = [ 
+    {id: 1, name: 'apple'}, 
+    {id: 2, name: 'watermelon'}, 
+    {id: 3, name: 'qiwi'}, 
+    {id: 4, name: 'lemon'} 
+];
+
+let result = objectsToArray(array);
+console.log(result);
+
+   
+       //3
+       let arr =["Hello", "my", "World !"];
+       delete arr[3]
+       alert(arr[3])
+       alert(arr,length)
+       alert(arr.length)//2
+
+      
+//4
+
+
+
+    </script>
+</body>
+</html>
